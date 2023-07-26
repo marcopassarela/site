@@ -1,0 +1,127 @@
+:root{
+    --color-cinza-transparente: rgba(29, 29, 29, 0.363);
+    --color-letras: #3d3d3d;
+}
+
+
+body, html {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f0f2f5;;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--color-cinza-transparente);
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+    
+}
+
+.menu:hover{
+    transform: none;
+    transition: none;
+}
+
+a{
+    color: rgb(245, 243, 243);
+    padding: 8px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    font-size: 1.7rem;
+    transition: 200ms;
+    color: rgb(75, 165, 40);
+}
+
+.img{
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: -7vh;
+    left: 25vh;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-top: 10vh;
+}
+
+.form{
+    width: 40%;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 12vh;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    padding: 5px;
+    justify-content: center;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.input-name-lastname{
+    text-align: justify;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+.input-email-data{
+    text-align: justify;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+.inp{
+    padding: 5px;
+    width: 30vh;
+    display: flex;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.preference{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.btn{
+    margin-top: 10px;
+    height: 33px;
+}
+
+.img-logo{
+    position: absolute;
+    margin-top: -55vh;
+    display: flex;
+    margin-left: 35vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fundo{
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+}
