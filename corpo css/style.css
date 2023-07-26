@@ -390,12 +390,24 @@ h4{
     height: 60vh;
     background-color: rgb(34, 107, 34);
     justify-content: center;
+    
 }
 @media screen and (max-width: 768px){
     .depoimentos{
-        height: 50%;
+        width: 100%;
     } 
 }
+
+.img-aluno1{
+    display: flex;
+    margin: auto;
+}
+@media screen and (max-width: 768px){
+    .img-aluno1{
+        width: 100%;
+    } 
+}
+
 
 .titulo{
     display: flex;
