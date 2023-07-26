@@ -404,7 +404,8 @@ h4{
 }
 @media screen and (max-width: 768px){
     .img-aluno1{
-        width: 100%;
+        width: 150px;
+        height: 100px;
     } 
 }
 
