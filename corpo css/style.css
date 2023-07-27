@@ -366,6 +366,13 @@ h4{
         align-items: center;
     } 
 }
+.imgs-beleza:hover{
+    transform: scale(1.1);
+    transition: 500ms;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 0px 45px 0px 45px;
+    background-color: #59595a49;   
+}
 
 .ensino-deferenciado{
     justify-content: center;
