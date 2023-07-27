@@ -297,7 +297,7 @@ button::before {
 .aprendizado{
     background-color: rgb(34, 107, 34);
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     color: #FFF;
     text-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
 }
@@ -326,9 +326,29 @@ button::before {
     } 
 }
 
-.titulos{
+.titulos1{
     font-size: 15px;
-    
+    position: relative;
+    margin-left: 6%;
+    margin-top: -3%;
+}
+.titulos2{
+    font-size: 15px;
+    position: relative;
+    margin-left: 6%;
+    margin-top: -3%;
+}
+.titulos3{
+    font-size: 15px;
+    position: relative;
+    margin-left: 6%;
+    margin-top: -3%;
+}
+.titulos4{
+    font-size: 15px;
+    position: relative;
+    margin-left: 6%;
+    margin-top: -3%;
 }
 
 
