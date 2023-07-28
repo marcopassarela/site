@@ -40,11 +40,6 @@ body, html {
     
 }
 
-.menu:hover{
-    transform: none;
-    transition: none;
-}
-
 .menu-nav{
     color: rgb(245, 243, 243);
     padding: 8px;
@@ -52,6 +47,13 @@ body, html {
     text-decoration: none;
     font-weight: bold;
 }
+
+.menu-nav:hover{
+    font-size: 1.7rem;
+    transition: 450ms;
+    color: rgb(75, 165, 40);
+}
+
 @media screen and (max-width: 768px){
     .menu-nav{
         font-size: 13px;
@@ -74,12 +76,6 @@ body, html {
     .img{
         display: none;
     }
-}
-
-.menu-nav:hover{
-    font-size: 1.7rem;
-    transition: 200ms;
-    color: rgb(75, 165, 40);
 }
 
 .pesquisa{
@@ -440,6 +436,7 @@ button::before {
 .img-aluno1{
     display: flex;
     margin: auto;
+    border-radius: 20px;
 }
 @media screen and (max-width: 768px){
     .img-aluno1{
