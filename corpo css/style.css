@@ -317,7 +317,6 @@ button::before {
     margin: auto;
     flex-direction: column;
     margin-left: 15%;
-
 }
 @media screen and (max-width: 768px){
     .img-garantia{
