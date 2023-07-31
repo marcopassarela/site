@@ -147,7 +147,11 @@ a.links-menu:hover{
 @media screen and (max-width: 768px){
     .box-geral{
         flex-direction: column;
-        margin-top: 30%;
+        margin-top: 45%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
 @media screen and (max-width: 768px){
