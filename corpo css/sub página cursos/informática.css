@@ -148,27 +148,19 @@ a.links-menu:hover{
     .box-geral{
         flex-direction: column;
         margin-top: 45%;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-}
-@media screen and (max-width: 768px){
-    .box1{
-        align-items: center;
-        margin-top: 15px;
     }
 }
 @media screen and (max-width: 768px){
     .box2{
-        align-items: center;
+        flex-direction: column;
+        margin-right: 15px;
         margin-top: 15px;
     }
 }
 @media screen and (max-width: 768px){
     .box3{
-        align-items: center;
+        flex-direction: column;
+        margin-right: 15px;
         margin-top: 15px;
     }
 }
