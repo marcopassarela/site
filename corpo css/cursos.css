@@ -81,6 +81,14 @@ a:hover{
         height: 80px;
     } 
 }
+.img-cursos:hover{
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 0px 45px 0px 45px;
+    background-color: #59595a49;
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
 .button{
     display: flex;
     justify-content: center;
