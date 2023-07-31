@@ -119,6 +119,12 @@ a.links-menu:hover{
     font-family: 'Roboto' sans-serif;
     color: rgb(34, 118, 167);
 }
+@media screen and (max-width: 768px){
+    .titulo{
+        font-size: 12px;
+    }
+}
+
 
 .box-geral{
     display: flex;
@@ -129,6 +135,7 @@ a.links-menu:hover{
     font-size: 35px;
     align-items: center;
 }
+
 .box1{
     width: 300px;
     height: 300px;
@@ -137,6 +144,31 @@ a.links-menu:hover{
     border-radius: 20px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
 }
+@media screen and (max-width: 768px){
+    .box-geral{
+        flex-direction: column;
+        margin-top: 30%;
+    }
+}
+@media screen and (max-width: 768px){
+    .box1{
+        align-items: center;
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 768px){
+    .box2{
+        align-items: center;
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 768px){
+    .box3{
+        align-items: center;
+        margin-top: 15px;
+    }
+}
+
 h3{
     display: flex;
     justify-content: center;
@@ -145,6 +177,26 @@ h3{
     font-size: 45px;
     margin-top: 1vh;
     
+}
+@media screen and (max-width: 768px){
+    h3{
+       font-size: 25px;
+    }
+}
+@media screen and (max-width: 768px){
+    li.text1{
+       font-size: 12px;
+    }
+}
+@media screen and (max-width: 768px){
+    li.text2{
+       font-size: 12px;
+    }
+}
+@media screen and (max-width: 768px){
+    li.text3{
+       font-size: 12px;
+    }
 }
 .text1{
     font-size: 15px;
