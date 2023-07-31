@@ -21,8 +21,8 @@ body, html {
     justify-content: center;
     height: 10vh;
     align-items: center;
-    
 }
+
 
 .menu:hover{
     transform: none;
@@ -42,6 +42,16 @@ a:hover{
     transition: 200ms;
     color: rgb(75, 165, 40);
 }
+@media screen and (max-width: 768px){
+    a{
+        font-size: 11px;
+    }
+    a:hover{
+        transform: none;
+        transition: none;
+        font-size: .9rem;
+    }
+}
 
 .img-logo{
     width: 200px;
@@ -51,6 +61,11 @@ a:hover{
     left: 25vh;
     flex-wrap: wrap;
     margin-top: 10vh;
+}
+@media screen and (max-width: 768px){
+    .img-logo{
+        display: none;
+    }
 }
 
 .imgs{
@@ -84,6 +99,14 @@ a:hover{
     transform: scale(1.3);
     transition: 400ms;
     cursor: pointer;
+}
+@media screen and (max-width: 768px){
+    .button{
+        width: 35%;
+        font-size: 15px;
+        height: 5vh;
+        margin-top: -5%;
+    } 
 }
 
 button::before {
@@ -127,8 +150,8 @@ button::before {
           opacity: 1;
         }
         100% {
-          width: 350px;
-          height: 350px;
+          width: 500px;
+          height: 500px;
           opacity: 0;
     }
 }
