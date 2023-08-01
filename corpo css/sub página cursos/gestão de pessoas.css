@@ -131,7 +131,7 @@ a.links-menu:hover{
     display: flex;
     justify-content: center;
     font-family: 'Roboto' sans-serif;
-    color: rgb(34, 118, 167);
+    color: rgb(92, 34, 167);
 }
 @media screen and (max-width: 768px){
     .titulo{
@@ -185,7 +185,7 @@ h3{
     display: flex;
     justify-content: center;
     font-family: 'Roboto' sans-serif;
-    color: rgb(34, 118, 167);
+    color: rgb(92, 34, 167);
     font-size: 45px;
     margin-top: 1vh;
     
@@ -217,7 +217,7 @@ h3{
     width: 90%;
     margin-left: 1vw;
     list-style: none;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 .text2{
     font-size: 15px;
@@ -226,7 +226,7 @@ h3{
     width: 90%;
     margin-left: 1vw;
     list-style: none;
-    margin-bottom: 27%;
+    margin-bottom: 16%;
 }
 .text3{
     font-size: 15px;
@@ -235,7 +235,7 @@ h3{
     width: 90%;
     margin-left: 1vw;
     list-style: none;
-    margin-bottom: 5%;
+    margin-bottom: 28%;
 }
 .raiz{
     display: flex;
