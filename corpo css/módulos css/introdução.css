@@ -1,24 +1,36 @@
+:root{
+    --color-cinza-transparente: rgba(29, 29, 29, 0.363);
+    --color-letras: #3d3d3d;
+}
+
+
 body, html {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(/img/PLANO\ DE\ FUNDO\ 1.png);
 }
 
 .menu{
-    position: absolute;
     top: 0;
-    width: 100%;
-    z-index: 1;
+    width: 50%;
     background-color: var(--color-cinza-transparente);
     display: flex;
     justify-content: center;
-    height: 10vh;
     align-items: center;
-    
+    border-radius: 0 0 20px 20px ;
+    margin: auto;
 }
 
-.menu-nav{
+
+.menu:hover{
+    height: 10vh;
+    background-image: linear-gradient(rgb(42, 136, 18), rgba(52, 153, 27, 0.24));
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+a{
     color: rgb(245, 243, 243);
     padding: 8px;
     font-size: 1.2rem;
@@ -26,16 +38,45 @@ body, html {
     font-weight: bold;
 }
 
-.menu-nav:hover{
+a:hover{
     font-size: 1.7rem;
-    transition: 450ms;
-    color: rgb(75, 165, 40);
+    transition: 200ms;
+    color: rgb(0, 0, 0);
 }
-
 @media screen and (max-width: 768px){
-    .menu-nav{
-        font-size: 13px;
+    a{
+        font-size: 11px;
+    }
+    a:hover{
         transform: none;
         transition: none;
+        font-size: .9rem;
     }
+}
+
+.texto1{
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
+    margin-left: 30%;
+    
+}
+li{
+    font-size: 25px;
+    list-style: none;
+    color: #FFF;
+    font-weight: 400 black;
+}
+
+.cronograma{
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
+.aulas{
+    margin-left: 30%;
+    margin-top: 1%;
+    background-color: red;
 }
