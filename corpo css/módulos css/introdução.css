@@ -9,7 +9,6 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url(/img/PLANO\ DE\ FUNDO\ 1.png);
 }
 
 .menu{
@@ -55,27 +54,8 @@ a:hover{
     }
 }
 
-.texto1{
+.box1{
     width: 50%;
-    margin-left: 30%;
-    margin-top: 7%;
-
-}
-.descrição{
-    font-size: 20px;
-    color: #FFF;
-    display: flex;
-    
-}
-
-.cronograma{
-    width: 100%;
-    margin-top: 5%;
-}
-
-.aulas{
-    font-size: 20px;
-    list-style: none;
-    color: #FFF;
-    margin-left: 30%;
+    height: 50%;
+    background-color: red;
 }
