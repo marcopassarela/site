@@ -1,5 +1,5 @@
 :root{
-    --color-cinza-transparente: rgba(29, 29, 29, 0.363);
+    --color-cinza-transparente: rgba(29, 29, 29, 0.329);
     --color-letras: #3d3d3d;
 }
 
@@ -13,18 +13,19 @@ body, html {
 }
 
 .menu{
-    top: 0;
     width: 50%;
+    height: 10vh;
     background-color: var(--color-cinza-transparente);
     display: flex;
     justify-content: center;
-    align-items: center;
     border-radius: 0 0 20px 20px ;
     margin: auto;
+    align-items: center;
 }
 
 
 .menu:hover{
+    transition: 500ms ease-in-out;    
     height: 10vh;
     background-image: linear-gradient(rgb(42, 136, 18), rgba(52, 153, 27, 0.24));
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
@@ -56,27 +57,25 @@ a:hover{
 
 .texto1{
     width: 50%;
-    height: 50%;
-    margin-top: 5%;
     margin-left: 30%;
-    
+    margin-top: 7%;
+
 }
-li{
-    font-size: 25px;
-    list-style: none;
+.descrição{
+    font-size: 20px;
     color: #FFF;
-    font-weight: 400 black;
+    display: flex;
+    
 }
 
 .cronograma{
-    width: 50%;
-    height: 50%;
+    width: 100%;
     margin-top: 5%;
-    margin-left: 30%;
 }
 
 .aulas{
+    font-size: 20px;
+    list-style: none;
+    color: #FFF;
     margin-left: 30%;
-    margin-top: 1%;
-    background-color: red;
 }
