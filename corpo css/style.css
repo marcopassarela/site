@@ -303,7 +303,7 @@ button::before {
 @media screen and (max-width: 768px){
     .aprendizado{
         font-size: 20px;
-        height: 60%;
+        height: 15vh;
     } 
 }
 
