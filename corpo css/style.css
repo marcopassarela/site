@@ -37,7 +37,11 @@ body, html {
     justify-content: center;
     height: 10vh;
     align-items: center;
-    
+}
+@media screen and (max-width: 768px){
+    .menu{
+        height: 6vh;
+    }
 }
 
 .menu-nav{
