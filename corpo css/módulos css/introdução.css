@@ -1,19 +1,18 @@
-:root{
-    --color-cinza-transparente: rgba(29, 29, 29, 0.329);
-    --color-letras: #3d3d3d;
-}
-
-
-body, html {
-    flex-wrap: wrap;
+body{
     margin: 0;
     padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.img_fundo{
+#img_fundo{
     width: 100%;
     height: 100vh;
-    background-size: cover
-    
+    background-color: red;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
 }
