@@ -249,7 +249,9 @@ button::before {
     .escola{
         width: 80%;
         margin: auto; 
-        font-size: 17px;      
+        font-size: 17px;
+        text-align: justify;
+        word-spacing: -1px;     
     }
 }
 
@@ -417,6 +419,8 @@ button::before {
         margin-left: 10%;
         margin-right: 10%;
         font-size: 17px;
+        text-align: justify;
+        word-spacing: -3px;
     } 
 }
 
