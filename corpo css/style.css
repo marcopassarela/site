@@ -61,6 +61,12 @@ body, html {
         transition: none;
     }
 }
+@media screen and (max-width: 768px){
+    .menu-nav:hover{
+        font-size: 12px;
+        font-size: .89rem;
+    }
+}
 
 .img{
     width: 200px;
@@ -260,7 +266,7 @@ button::before {
 @media screen and (max-width: 768px){
     .sucesso{
         width: 80%;
-        font-size: 25px;
+        font-size: 20px;
         align-items: center;
         text-align: center;   
     }
@@ -354,7 +360,7 @@ button::before {
 }
 @media screen and (max-width: 768px){
     .beleza{
-        font-size: 25px;
+        font-size: 20px;
         height: 50%;
         text-align: center;
     } 
@@ -392,7 +398,7 @@ button::before {
 @media screen and (max-width: 768px){
     .ensino-deferenciado{
         text-align: center;
-        font-size: 25px;
+        font-size: 20px;
     } 
 }
 
