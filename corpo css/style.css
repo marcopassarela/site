@@ -251,7 +251,7 @@ button::before {
         margin: auto; 
         font-size: 17px;
         text-align: justify;
-        word-spacing: -1px;     
+        word-spacing: -2px;     
     }
 }
 
@@ -420,7 +420,7 @@ button::before {
         margin-right: 10%;
         font-size: 17px;
         text-align: justify;
-        word-spacing: -3px;
+        word-spacing: -4px;
     } 
 }
 
