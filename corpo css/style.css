@@ -416,6 +416,7 @@ button::before {
         margin: auto;
         margin-left: 10%;
         margin-right: 10%;
+        font-size: 17px;
     } 
 }
 
