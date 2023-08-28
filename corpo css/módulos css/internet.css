@@ -25,7 +25,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(12, 121, 30);
+    background-color: rgb(146, 204, 10);
     width: 25%;
     border-radius: 8px;
     margin-left: auto;
@@ -55,7 +55,7 @@ li{
 #box1{
     width: 3vw;
     height: 5vh;
-    background-color: rgb(12, 121, 30);
+    background-color: rgb(146, 204, 10);
     border-radius: 5px;
     align-items: center;
     text-align: center;
