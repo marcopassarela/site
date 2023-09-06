@@ -130,7 +130,7 @@ a.links-menu:hover{
     display: flex;
     justify-content: center;
     font-family: 'Roboto' sans-serif;
-    color: rgb(34, 118, 167);
+    color: rgb(191, 224, 7);
 }
 @media screen and (max-width: 768px){
     .titulo{
@@ -182,7 +182,7 @@ h3{
     display: flex;
     justify-content: center;
     font-family: 'Roboto' sans-serif;
-    color: rgb(34, 118, 167);
+    color: rgb(191, 224, 7);
     font-size: 45px;
     margin-top: 1vh;
     
