@@ -10,10 +10,10 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
-            "name": "Trabalhe Conosco",
+            "name": "Trabalhe_Conosco",
+            "database": "trabalhe_conosco",
             "username": "root",
-            "password": "Marco@978567",
-            "database": "trabalhe_conosco"
+            "password": "Marco@5213"
         }
     ]
 }
