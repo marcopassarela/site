@@ -88,18 +88,7 @@ body, html {
     }
 }
 
-.pesquisa{
-    position: absolute;
-    top: 20px;
-    right: 100px;
-    padding: 9px;
-    border-radius: 25px;
-    width: 15%;
-    outline: none;
-    border: 1px solid #dfe1e5;
-    font-size: 15px;
-    flex-wrap: wrap;
-}
+
 @media screen and (max-width: 768px){
     .pesquisa{
         display: none;
