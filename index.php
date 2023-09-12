@@ -22,7 +22,7 @@ if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') 
     $dataNascimento = isset($_POST['data_nascimento']) ? $_POST['data_nascimento'] : '';
 
     // Depuração: Exiba as informações sobre o arquivo de currículo
-    var_dump($_FILES['curriculo']);
+    var_dump($_FILES);
 
     // Processar o arquivo de currículo enviado
     $nomeArquivo = isset($_FILES['curriculo']['name']) ? $_FILES['curriculo']['name'] : '';
