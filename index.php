@@ -21,6 +21,9 @@ if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') 
     $email = isset($_POST['email']) ? $_POST['email'] : '';
     $dataNascimento = isset($_POST['data_nascimento']) ? $_POST['data_nascimento'] : '';
 
+    // Depuração: Exiba as informações sobre o arquivo de currículo
+    var_dump($_FILES['curriculo']);
+
     // Processar o arquivo de currículo enviado
     $nomeArquivo = isset($_FILES['curriculo']['name']) ? $_FILES['curriculo']['name'] : '';
     $localArquivo = isset($_FILES['curriculo']['tmp_name']) ? $_FILES['curriculo']['tmp_name'] : '';
@@ -52,6 +55,7 @@ if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') 
 } else {
     // Trate o caso em que REQUEST_METHOD não está definido ou não é POST
 }
+
 // Feche a conexão com o banco de dados
 $conn->close();
 ?>
