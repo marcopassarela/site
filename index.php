@@ -14,35 +14,44 @@ if ($conn->connect_error) {
 }
 
 // Verifique se a solicitação foi feita via método POST
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
     // Receba os dados do formulário
-    $nome = $_POST['nome'];
-    $telefone = $_POST['telefone'];
-    $email = $_POST['email'];
-    $dataNascimento = $_POST['data_nascimento'];
+    $nome = isset($_POST['nome']) ? $_POST['nome'] : '';
+    $telefone = isset($_POST['telefone']) ? $_POST['telefone'] : '';
+    $email = isset($_POST['email']) ? $_POST['email'] : '';
+    $dataNascimento = isset($_POST['data_nascimento']) ? $_POST['data_nascimento'] : '';
 
     // Processar o arquivo de currículo enviado
-    $nomeArquivo = $_FILES['curriculo']['name'];
-    $localArquivo = $_FILES['curriculo']['tmp_name'];
+    $nomeArquivo = isset($_FILES['curriculo']['name']) ? $_FILES['curriculo']['name'] : '';
+    $localArquivo = isset($_FILES['curriculo']['tmp_name']) ? $_FILES['curriculo']['tmp_name'] : '';
 
-    // Mova o arquivo para um diretório de destino (por exemplo, 'uploads')
-    $diretorioDestino = 'uploads/';
-    $caminhoCompleto = $diretorioDestino . $nomeArquivo;
+    // Verifique a extensão do arquivo
+    $extensaoPermitida = array("pdf", "doc", "docx");
+    $extensao = strtolower(pathinfo($nomeArquivo, PATHINFO_EXTENSION));
 
-    if (move_uploaded_file($localArquivo, $caminhoCompleto)) {
-        // Inserir os dados no banco de dados, incluindo o caminho do currículo
-        $sql = "INSERT INTO pessoas (nome, telefone, email, data_nascimento, curriculo) VALUES ('$nome', '$telefone', '$email', '$dataNascimento', '$caminhoCompleto')";
-
-        if ($conn->query($sql) === TRUE) {
-            echo "Dados inseridos com sucesso!";
-        } else {
-            echo "Erro ao inserir dados: " . $conn->error;
-        }
+    if (!in_array($extensao, $extensaoPermitida)) {
+        echo "Erro: Apenas arquivos PDF, DOC e DOCX são permitidos.";
     } else {
-        echo "Erro ao fazer o upload do currículo.";
-    }
+        // Mova o arquivo para um diretório de destino (por exemplo, 'uploads')
+        $diretorioDestino = 'uploads/';
+        $caminhoCompleto = $diretorioDestino . $nomeArquivo;
 
-    // Feche a conexão com o banco de dados
-    $conn->close();
+        if (move_uploaded_file($localArquivo, $caminhoCompleto)) {
+            // Inserir os dados no banco de dados, incluindo o caminho do currículo
+            $sql = "INSERT INTO pessoas (nome, telefone, email, data_nascimento, curriculo) VALUES ('$nome', '$telefone', '$email', '$dataNascimento', '$caminhoCompleto')";
+
+            if ($conn->query($sql) === TRUE) {
+                echo "Dados inseridos com sucesso!";
+            } else {
+                echo "Erro ao inserir dados: " . $conn->error;
+            }
+        } else {
+            echo "Erro ao fazer o upload do currículo.";
+        }
+    }
+} else {
+    // Trate o caso em que REQUEST_METHOD não está definido ou não é POST
 }
+// Feche a conexão com o banco de dados
+$conn->close();
 ?>
