@@ -59,7 +59,7 @@ body, html {
 }
 
 .menu-nav:hover {
-    transform: scale(1.3);
+    transform: scale(1.4);
     color: rgb(75, 165, 40);
     transition: transform 0.5s ease; 
 }
