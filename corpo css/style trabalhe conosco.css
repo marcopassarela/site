@@ -69,6 +69,7 @@ a:hover{
     margin-top: 20%;
     color: rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
+    padding: 1%;
 }
 label{
     margin-left: 20px;
@@ -113,4 +114,19 @@ input:focus{
 #enviar:hover{
     transform: scale(1.1);
     background-color: #0b61d1;
+}
+
+.img_logo{
+    display: flex;
+    position: fixed;
+    right: 30%;
+    margin-top: 2%;
+}
+
+li{
+    display: flex;
+    text-decoration: none;
+    margin-left: 1.2rem;
+    margin-top: -1.5%;
+    font-family: 'Roboto', sans-serif;
 }
