@@ -39,9 +39,24 @@
         <label for="pacote">Pacote Desejado:</label>
         <select name="pacote" id="pacote" required>
             <option value="">Selecione um Pacote*</option>
-            <option value="Pacote 1">Introdução a Informática</option>
-            <option value="Pacote 2">Gestão de Pessoas</option>
-            <option value="Pacote 3">Design Gráfico</option>
+            <option value="Pacote 1">Atendente de Farmacia</option>
+            <option value="Pacote 2">Criação e Edição de Vídeos</option>
+            <option value="Pacote 3">Desenvolvedor de Games</option>
+            <option value="Pacote 4">Designer Gráfico</option>
+            <option value="Pacote 5">Engenharia Gráfica</option>
+            <option value="Pacote 6">Evolução Profissional</option>
+            <option value="Pacote 7">Excel Completo</option>
+            <option value="Pacote 8">Fotografia Digital</option>
+            <option value="Pacote 9">Gestão de Pessoas</option>
+            <option value="Pacote 10">Gestão de Vendas</option>
+            <option value="Pacote 11">Gestão de Empresas</option>
+            <option value="Pacote 12">Gestão Financeira</option>
+            <option value="Pacote 13">Marketing Digital</option>
+            <option value="Pacote 14">Melhor Idade</option>
+            <option value="Pacote 15">Montagem e Manutenção</option>
+            <option value="Pacote 16">Profissional Digital</option>
+            <option value="Pacote 17">Programador de Aplicativos</option>
+            <option value="Pacote 18">Web Designer</option>
         </select><br>
     
         <label for="curso">Curso Desejado:</label>
@@ -56,9 +71,41 @@
     
             // Dados dos cursos por pacote
             const cursosPorPacote = {
-                "Pacote 1": ["Informática", "Windows 10 Essencial", "Windows 10 Avançado", "Excel Essencial","Excel intermediario", "PowerPoint Avanlçado","Word Essencial", "Word Avançado", "Era Digital"],
-                "Pacote 2": ["Curso X", "Curso Y", "Curso Z"],
-                "Pacote 3": ["Curso P", "Curso Q", "Curso R"]
+                "Pacote 1": ["Rotinas Administrativas", "Operador de Caixa", "Agente de Vendas", "Excel Essencial","Atentente de Farmácia"],
+
+                "Pacote 2": ["Adobe Premier", "Adboe After Effects", "Internet", "Google Adwords","Como  ter uma canal de Sucesso no Youtube"],
+
+                "Pacote 3": ["Lógica de Programação", "Pixel Art", "Desenvolvimento de Games", "Desenvolvimento de Games 3D"],
+
+                "Pacote 4": ["CorelDraw Mod 1", "CorelDraw Mod 2", "Adobe PhotoShop Mod 1", "Adobe PhotoShop Mod 2","Adobe Ilustrator"],
+
+                "Pacote 5": ["AutoCad Mod 1", "AutoCad Mod 2", "Sketchup"],
+
+                "Pacote 6": ["Desenvolvimento Profissional", "Dinamismo e Compromisso com o Sucesso", "Empreendedor de Sucesso", "A importância da Criatividade","Líder do Amanhã", "Trabalho em Equipe","Dez Maneiras de Vender uma Ideia", "Estratégia de Sucesso para Lidar com Conflitos", "Excelência no Atendimento ao Cliente"],
+
+                "Pacote 7": ["Excel Essencial", "Excel Intermediário", "Excel Avançado"],
+
+                "Pacote 8": ["Adobe PhotoShop Essencial", "Adobe PhotoShop Avançado", "Adobe Premier", "Adobe After Effects","Fotografia Digital"],
+
+                "Pacote 9": ["Gestão de Pessoas", "Hotelaria e Turismo", "Crédito e Cobrança", "Desenvolvimento e Compromisso com o Sucesso","Empreendedor de Sucesso", "Líder do Amanhã","Trabalho em Equipe", "Dez Maneiras de Vender uma Ideia", "Estratégia de Sucesso para Lidar com Conflitos", "Excelência no Atendimento ao Cliente"],
+
+                "Pacote 10": ["Agente de Vendas", "Gestão de Pessoas", "Telemarketing", "Rotinas Administrativas","Desenvolvimento Profissional", "Dinamismo e Compromisso","Empreendedor de Sucesso", "A Importância da Criatividade no Ambiente de Trabalho", "Líder do Amanhã", "Trabalho em Equipe", "Dez Maneiras de Vender um Ideia", "Estratégia de Sucesso", "Excelência no Atendimento ao Cliente", "Como Conquistar um Emprego", "Excel Essencial"],
+
+                "Pacote 11": ["Rotinas Administrativas", "Agente de Vendas", "Assistente Contábil", "Operador de Caixa","Assistente de RH", "Telemarketing","Como Conquistar um Emprego"],
+
+                "Pacote 12": ["Rotinas Administrativas", "Assistente Contábil", "Operador de Caixa", "Crédito e Cobrança","Assistente de RH", "Excel Essencial","Excel Intermediário"],
+
+                "Pacote 13": ["Agente de Vendas", "Dez Maneiras de Vender uma ideia", "Marketing Digital I", "Adobe PhotoShop Essencial","Google Adwords", "Marketing Digital II"],
+
+                "Pacote 14": ["Montagem e Manutenção de Computadores", "Redes e Cabeamento", "Redes e Lógica e Estruturação", "Redes Tecnologia Wireless"],
+
+                "Pacote 15": ["Informática", "Windows 10 Essencial", "Windows 10 Avançado", "Excel Essencial","Excel Intermediário", "PowerPoint Essencial","PowerPoint Avançado","Word Essencial", "Word Avançado", "Era Digital","Internet", ""],
+
+                "Pacote 16": ["Lógica de Programção", "Criando Aplicativos com Angular", "Criando Aplicativos com Cordova", "Criando Aplicativos com Ionic"],
+
+                "Pacote 17": ["Lógica de Programação", "Banco de Dados", "Programação C# Essencial", "Programação C# Intermediário","Programação C# Avançado I", "Programação C# Avançado II"],
+
+                "Pacote 18": ["Web Designer", "Adobe PhotoShop Essencial", "Google Adwords", "Desenvolvimento Web CSS","Desenvolvimento Web HTML", "Desenvolvimento Web JavaScript","Desenvolvimento Web WordPress"],
             };
     
             // Adiciona um ouvinte de eventos para monitorar as mudanças no campo "Pacote Desejado"
