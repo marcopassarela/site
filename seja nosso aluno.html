@@ -21,3 +21,72 @@
         <a href="trabalhe conosco.html" type="link" class="menu-nav">Trabelhe conosco</a>
         <a href="seja nosso aluno.html"><input type="submit" class="seja_nosso_aluno" value="Seja nosso aluno"></a>
     </div>
+    <div id="title">
+        <li id="principal">Quero ser um aluno Master</li><br>
+        <li>Basta estar preenchendo este formulario abaixo</li>
+    </div>
+
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required placeholder="Nome*"><br>
+    
+        <label for="telefone">WhatsApp:</label>
+        <input type="text" name="telefone" id="telefone" required placeholder="WhatsApp*"><br>
+    
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" required placeholder="Email*"><br>
+    
+        <label for="pacote">Pacote Desejado:</label>
+        <select name="pacote" id="pacote" required>
+            <option value="">Selecione um Pacote*</option>
+            <option value="Pacote 1">Introdução a Informática</option>
+            <option value="Pacote 2">Gestão de Pessoas</option>
+            <option value="Pacote 3">Design Gráfico</option>
+        </select><br>
+    
+        <label for="curso">Curso Desejado:</label>
+        <select name="cursos" id="cursos" disabled placeholder="Selecione um Pacote*" required>
+            <option value="">Selecione um Pacote primeiro*</option>
+        </select><br>
+    
+        <script>
+            // Referências aos elementos
+            const pacoteSelect = document.getElementById("pacote");
+            const cursosSelect = document.getElementById("cursos");
+    
+            // Dados dos cursos por pacote
+            const cursosPorPacote = {
+                "Pacote 1": ["Informática", "Windows 10 Essencial", "Windows 10 Avançado", "Excel Essencial","Excel intermediario", "PowerPoint Avanlçado","Word Essencial", "Word Avançado", "Era Digital"],
+                "Pacote 2": ["Curso X", "Curso Y", "Curso Z"],
+                "Pacote 3": ["Curso P", "Curso Q", "Curso R"]
+            };
+    
+            // Adiciona um ouvinte de eventos para monitorar as mudanças no campo "Pacote Desejado"
+            pacoteSelect.addEventListener("change", function () {
+                const pacoteSelecionado = pacoteSelect.value;
+                // Limpa as opções existentes
+                cursosSelect.innerHTML = '';
+                
+                // Adiciona a opção padrão
+                const optionDefault = document.createElement('option');
+                optionDefault.value = '';
+                optionDefault.textContent = 'Selecione um Curso*';
+                cursosSelect.appendChild(optionDefault);
+    
+                if (pacoteSelecionado && cursosPorPacote[pacoteSelecionado]) {
+                    // Adiciona as opções dos cursos para o pacote selecionado
+                    cursosPorPacote[pacoteSelecionado].forEach(curso => {
+                        const optionCurso = document.createElement('option');
+                        optionCurso.value = curso;
+                        optionCurso.textContent = curso;
+                        cursosSelect.appendChild(optionCurso);
+                    });
+                    cursosSelect.disabled = false;
+                } else {
+                    cursosSelect.disabled = true;
+                }
+            });
+        </script><br>
+        <button type="submit" id="btn" name="">Enviar</button>
+    </form>
+    

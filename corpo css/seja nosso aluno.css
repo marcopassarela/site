@@ -116,3 +116,49 @@ body, html {
 .seja_nosso_aluno:hover{
     transform: scale(1.05);
 }
+
+#title{
+    margin-top: 7%;
+    justify-content: center ;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+#principal{
+    font-size: 25px;
+    font-weight: bold;
+}
+form{
+    margin-left: 10%;
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-top: 5%;
+}
+
+input {
+    margin-bottom: 15px;
+    height: 40px;
+    width: 40%;
+    display: block;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#btn{
+    display: flex;
+    width: 10%;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #1877f2;
+    border-radius: 10px;
+    border: 1px solid #1877f2;
+    cursor: pointer;
+    transition: 0.5s ease;
+    color: white;
+}
+#btn:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    background-color: #1463ca;
+}
