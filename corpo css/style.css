@@ -94,7 +94,7 @@ body, html {
     }
 }
 
-.pesquisa{
+.seja_nosso_aluno{
     position: absolute;
     top: 20px;
     right: 100px;
@@ -125,11 +125,11 @@ body, html {
     }
   }
 @media screen and (max-width: 768px){
-    .pesquisa{
+    .seja_nosso_aluno{
         display: none;
     }
 }
-.pesquisa:hover{
+.seja_nosso_aluno:hover{
     transform: scale(1.05);
 }
 
