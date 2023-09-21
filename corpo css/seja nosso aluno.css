@@ -7,14 +7,12 @@
     --color-black: black;
 }
 
-
 body, html {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 
 .menu{
     position: absolute;
@@ -26,6 +24,7 @@ body, html {
     justify-content: center;
     height: 10vh;
     align-items: center;
+   
 }
 @media screen and (max-width: 768px){
     .menu{
@@ -61,4 +60,59 @@ body, html {
         font-size: 12px;
         font-size: .89rem;
     }
+}
+
+.img{
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: -7vh;
+    left: 25vh;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    margin-left: 40px;
+}
+@media screen and (max-width: 768px){
+    .img{
+        display: none;
+    }
+}
+
+.seja_nosso_aluno{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    padding: 12px;
+    border-radius: 10px;
+    width: 10%;
+    outline: none;
+    border: 1px solid #dfe1e5;
+    font-size: 15px;
+    flex-wrap: wrap;
+    transition: effects 0.3s ease, transform 0.2s ease;
+    background-color: var(--color-yellow);
+    column-rule: var(--color-white);
+    color: var(--color-black);
+    font-weight: bold;
+    cursor: pointer;
+    animation: pulse 1s ease-in-out infinite;
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+@media screen and (max-width: 768px){
+    .seja_nosso_aluno{
+        display: none;
+    }
+}
+.seja_nosso_aluno:hover{
+    transform: scale(1.05);
 }
