@@ -41,6 +41,7 @@ body, html {
     justify-content: center;
     height: 10vh;
     align-items: center;
+   
 }
 @media screen and (max-width: 768px){
     .menu{
@@ -246,8 +247,6 @@ body, html {
     }
 }
 .imgs{
-    justify-content: center;
-    align-items: center;
     margin: auto;
     text-align: center;
     margin-top: 5vh;
@@ -262,12 +261,15 @@ body, html {
     }
 }
 
-.hover-cursos:hover{
+.hover-cursos:hover {
     transform: scale(1.1);
     transition: 500ms;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-    border-radius: 0px 45px 0px 45px;
-    background-color: #59595a49;
+    border-radius: 45px; /* Bordas arredondadas */
+    background-image: linear-gradient(to right, #ffffff1c, #00ff0070); 
+    background-origin: border-box;
+    background-clip: content-box;
+    
 }
 
 .aprendizado{
