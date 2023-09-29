@@ -24,7 +24,7 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
-            "name": "Seja_nosso_aluno",
+            "name": "seja_nosso_aluno",
             "database": "seja_nosso_aluno",
             "username": "root",
             "password": "1234"
