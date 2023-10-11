@@ -107,6 +107,12 @@ body, html {
         padding: 2%;
     }
 }
+@media screen and (max-width: 328px){
+    .menu-nav{
+        font-size: 0.6rem;
+        padding: 2%;
+    }
+}
 @media screen and (max-width: 360px){
     .menu-nav:hover{
         font-size: 0.7rem;
@@ -114,7 +120,13 @@ body, html {
         transition: none;
     }
 }
-
+@media screen and (max-width: 328px){
+    .menu-nav:hover{
+        font-size: 0.6rem;
+        transform: none;
+        transition: none;
+    }
+}
 .img{
     width: 200px;
     height: 40px;
@@ -218,6 +230,14 @@ body, html {
         margin-top: -4%;
     }
 }
+@media screen and (max-width: 328px){
+    .button{
+        font-size: 0.8rem;
+        width: 45%;
+        height: 5vh;
+        margin-top: -4%;
+    }
+}
 
 .texto{
     display: flex;
@@ -303,8 +323,17 @@ body, html {
 }
 @media screen and (max-width: 360px){
     .linha2{
-        font-size: 1.5rem;
-        
+        font-size: 1.5rem;  
+    }
+}
+@media screen and (max-width: 328px){
+    .linha1{
+        font-size: 2.7rem;  
+    }
+}
+@media screen and (max-width: 328px){
+    .linha2{
+        font-size: 1.5rem;  
     }
 }
 
