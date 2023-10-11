@@ -103,13 +103,13 @@ body, html {
 }
 @media screen and (max-width: 360px){
     .menu-nav{
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         padding: 2%;
     }
 }
 @media screen and (max-width: 360px){
     .menu-nav:hover{
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         transform: none;
         transition: none;
     }
@@ -214,7 +214,7 @@ body, html {
     .button{
         font-size: 0.8rem;
         width: 45%;
-        height: 7vh;
+        height: 5vh;
     }
 }
 
