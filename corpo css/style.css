@@ -74,13 +74,7 @@ body, html {
     color: rgb(75, 165, 40);
     transition: transform 0.5s ease; 
 }
-@media screen and (max-width: 1440px){
-    .menu-nav{
-        font-size: 15px;
-        transform: none;
-        transition: none;
-    }
-}
+
 @media screen and (max-width: 768px){
     .menu-nav{
         font-size: 20px;
@@ -107,13 +101,13 @@ body, html {
         font-size: 13px;
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 360px){
     .menu-nav{
         font-size: 0.6rem;
         padding: 2%;
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 360px){
     .menu-nav:hover{
         font-size: 0.6rem;
         transform: none;
@@ -216,7 +210,7 @@ body, html {
         margin-top: -6%;
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 360px){
     .button{
         font-size: 0.8rem;
         width: 45%;
@@ -256,7 +250,7 @@ body, html {
         text-align: center;  
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 360px){
     .texto{
         width:90%;
         font-size: 1rem;
@@ -301,12 +295,12 @@ body, html {
         font-size: 2rem;
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 360px){
     .linha1{
         font-size: 4rem;
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 360px){
     .linha2{
         font-size: 1.5rem;
         
@@ -349,7 +343,7 @@ body, html {
         word-spacing: -2px;     
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 360px){
     .escola{
         width: 80%;
         margin: auto; 
@@ -385,7 +379,7 @@ body, html {
         text-align: center;   
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 360px){
     .sucesso{
         width: 80%;
         font-size: 1rem;
