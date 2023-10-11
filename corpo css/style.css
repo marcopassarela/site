@@ -74,7 +74,13 @@ body, html {
     color: rgb(75, 165, 40);
     transition: transform 0.5s ease; 
 }
-
+@media screen and (max-width: 1440px){
+    .menu-nav{
+        font-size: 15px;
+        transform: none;
+        transition: none;
+    }
+}
 @media screen and (max-width: 768px){
     .menu-nav{
         font-size: 20px;
@@ -233,11 +239,31 @@ body, html {
 @media screen and (max-width: 768px){
     .texto{
         width: 80%;
-        font-size: 20px;
+        font-size: 1.4rem;
         margin: auto;
         margin-top: 5%;
         align-items: center;
         text-align: center;   
+    }
+}
+@media screen and (max-width: 428px){
+    .texto{
+        width:90%;
+        font-size: 1.1rem;
+        margin: auto;
+        margin-top: 5%;
+        align-items: center;
+        text-align: center;  
+    }
+}
+@media screen and (max-width: 320px){
+    .texto{
+        width:90%;
+        font-size: 1rem;
+        margin: auto;
+        margin-top: 5%;
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -254,7 +280,37 @@ body, html {
     font-size: 65px;
     color: rgb(49, 151, 23);
     font-weight: 800;
-    
+}
+@media screen and (max-width: 768px){
+    .linha1{
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .linha2{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 428px){
+    .linha1{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 428px){
+    .linha2{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 320px){
+    .linha1{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 320px){
+    .linha2{
+        font-size: 1.5rem;
+        
+    }
 }
 
 .linha2{
@@ -279,7 +335,25 @@ body, html {
     .escola{
         width: 80%;
         margin: auto; 
+        font-size: 1.5rem;
+        text-align: justify;
+        word-spacing: -2px;     
+    }
+}
+@media screen and (max-width: 428px){
+    .escola{
+        width: 80%;
+        margin: auto; 
         font-size: 17px;
+        text-align: justify;
+        word-spacing: -2px;     
+    }
+}
+@media screen and (max-width: 320px){
+    .escola{
+        width: 80%;
+        margin: auto; 
+        font-size: 1rem;
         text-align: justify;
         word-spacing: -2px;     
     }
@@ -298,7 +372,23 @@ body, html {
 @media screen and (max-width: 768px){
     .sucesso{
         width: 80%;
-        font-size: 20px;
+        font-size: 2rem;
+        align-items: center;
+        text-align: center;   
+    }
+}
+@media screen and (max-width: 428px){
+    .sucesso{
+        width: 80%;
+        font-size: 1.5rem;
+        align-items: center;
+        text-align: center;   
+    }
+}
+@media screen and (max-width: 320px){
+    .sucesso{
+        width: 80%;
+        font-size: 1rem;
         align-items: center;
         text-align: center;   
     }
