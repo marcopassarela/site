@@ -383,7 +383,8 @@ body, html {
     font-size: 20px;
     margin: auto;
     margin-left: 40vh;
-    margin-right: 40vh;  
+    margin-right: 40vh;
+    text-align: justify;
 }
 @media screen and (max-width: 768px){
     .linha3{
