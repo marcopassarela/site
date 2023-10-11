@@ -85,8 +85,7 @@ body, html {
 @media screen and (max-width: 768px){
     .menu-nav:hover{
         font-size: 20px;
-        transform: none;
-        scale: none;
+        transform: scale(1.2);
     }
 }
 @media screen and (max-width: 428px){
@@ -100,20 +99,19 @@ body, html {
 @media screen and (max-width: 428px){
     .menu-nav:hover{
         font-size: 13px;
-        
     }
 }
 @media screen and (max-width: 320px){
     .menu-nav{
-        font-size: 11px;
-        transform: none;
-        transition: none;
+        font-size: 0.6rem;
+        padding: 2%;
     }
 }
 @media screen and (max-width: 320px){
     .menu-nav:hover{
-        font-size: 12px;
-        font-size: .5rem;
+        font-size: 0.6rem;
+        transform: none;
+        transition: none;
     }
 }
 
@@ -197,7 +195,28 @@ body, html {
     transform: scale(1.2);
     transition: 0.4s ease;
 }
-
+@media screen and (max-width: 768px){
+    .button{
+        font-size: 1.2rem;
+        width: 35%;
+        height: 5.5vh;
+    }
+}
+@media screen and (max-width: 428px){
+    .button{
+        font-size: 1.2rem;
+        width: 40%;
+        height: 5.5vh;
+        margin-top: -6%;
+    }
+}
+@media screen and (max-width: 320px){
+    .button{
+        font-size: 0.8rem;
+        width: 45%;
+        height: 7vh;
+    }
+}
 
 .texto{
     display: flex;
