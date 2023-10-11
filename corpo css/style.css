@@ -214,7 +214,8 @@ body, html {
     .button{
         font-size: 0.8rem;
         width: 45%;
-        height: 5vh;
+        height: 4vh;
+        margin-top: -4%;
     }
 }
 
