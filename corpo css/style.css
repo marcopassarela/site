@@ -48,6 +48,16 @@ body, html {
         height: 6vh;
     }
 }
+@media screen and (max-width: 428px){
+    .menu{
+        height: 6vh;
+    }
+}
+@media screen and (max-width: 320px){
+    .menu{
+        height: 6vh;
+    }
+}
 
 .menu-nav {
     color: rgb(245, 243, 243);
@@ -67,15 +77,43 @@ body, html {
 
 @media screen and (max-width: 768px){
     .menu-nav{
-        font-size: 12px;
+        font-size: 20px;
         transform: none;
         transition: none;
     }
 }
 @media screen and (max-width: 768px){
     .menu-nav:hover{
+        font-size: 20px;
+        transform: none;
+        scale: none;
+    }
+}
+@media screen and (max-width: 428px){
+    .menu-nav{
+        font-size: 13px;
+        padding: 2%;
+        transform: none;
+        transition: none;
+    }
+}
+@media screen and (max-width: 428px){
+    .menu-nav:hover{
+        font-size: 13px;
+        
+    }
+}
+@media screen and (max-width: 320px){
+    .menu-nav{
+        font-size: 11px;
+        transform: none;
+        transition: none;
+    }
+}
+@media screen and (max-width: 320px){
+    .menu-nav:hover{
         font-size: 12px;
-        font-size: .89rem;
+        font-size: .5rem;
     }
 }
 
